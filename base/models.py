@@ -5,7 +5,7 @@ from django.db import models
 class Shoe(models.Model):
     name = models.CharField(max_length=200)
     price = models.IntegerField(max_length=10)
-    image_url = models.URLField(max_length=200)
+    image_url = models.URLField(max_length=500)
     description = models.TextField(max_length=50)
     phone_number = models.CharField(max_length= 15, null=True)
     updated = models.DateTimeField(auto_now=True)
